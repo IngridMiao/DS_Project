@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>bonus2</artifactId>
+	<artifactId>dsfinal</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bonus2</name>
+	<name>dsfinal</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -27,7 +27,7 @@
 		<url/>
 	</scm>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>21</java.version>
 	</properties>
 	<dependencies>
 	
@@ -81,6 +81,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+					<mainClass>com.example.dsfinal.GoogleOnWebApplication</mainClass>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
