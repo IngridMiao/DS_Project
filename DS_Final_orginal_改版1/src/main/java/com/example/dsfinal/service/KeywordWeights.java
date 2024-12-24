@@ -14,6 +14,7 @@ public class KeywordWeights {
         keywordWeights.put("NCCU", 1.0);
         keywordWeights.put("鬼故事", 1.0);
         keywordWeights.put("靈異", 1.0);
+        keywordWeights.put("校園", 1.0);
 
         // 設定隱藏式字典關鍵字的權重
         keywordWeights.put("恐怖", 0.5);
