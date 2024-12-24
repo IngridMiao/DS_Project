@@ -8,7 +8,7 @@
 <body>
     <h1>Boogle 查詢模擬</h1>
     <div>
-        <input type="text" id="queryInput" placeholder="輸入查詢關鍵字">
+        <input type="text" id="queryInput" placeholder="輸入查詢關鍵字" onkeypress="if(event.key === 'Enter') performSearch()">
         <button onclick="performSearch()">查詢</button>
     </div>
     <div id="results"></div>
