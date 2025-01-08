@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black; 
+    color: white; 
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: white;
+}
+
+.search-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#queryInput {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff3333;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+.result-item {
+    margin: 10px 0;
+}
+
+.result-item a {
+    color: rgb(138, 6, 6);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.result-item a:hover {
+    text-decoration: underline;
+}
+
+.result-item:nth-child(-n+10) a {
+    color: white;
+}
+
+.result-item:nth-child(n+11) a {
+    color: rgb(138, 6, 6);
+}
+
+.ghosts {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.ghost {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+}
+
+.ghost::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+.blinky {
+    background-color: red;
+}
+
+.blinky::after {
+    background-color: red;
+}
+
+
+.pinky {
+    background-color: pink;
+}
+
+.pinky::after {
+    background-color: pink;
+}
+
+
+.inky {
+    background-color: blue;
+}
+
+.inky::after {
+    background-color: blue;
+}
+
+
+.clyde {
+    background-color: orange;
+}
+
+.clyde::after {
+    background-color: orange;
+}
+
+
+.ghost .eye {
+    position: absolute;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.blinky .eye1 {
+    left: 15px;
+}
+
+.blinky .eye2 {
+    left: 55px;
+}
+
+.pinky .eye1 {
+    left: 15px;
+}
+
+.pinky .eye2 {
+    left: 55px;
+}
+
+.inky .eye1 {
+    left: 15px;
+}
+
+.inky .eye2 {
+    left: 55px;
+}
+
+.clyde .eye1 {
+    left: 15px;
+}
+
+.clyde .eye2 {
+    left: 55px;
+}
+
+.ghost .eye::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}

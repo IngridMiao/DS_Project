@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Boogle 查詢</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Boogle Search...</h1>
+    <div class="search-container">
+        <input type="text" id="queryInput" placeholder="輸入查詢關鍵字" onkeypress="if(event.key === 'Enter') performSearch()">
+        <button onclick="performSearch()">Boo</button>
+    </div>
+
+    
+    <div id="results"></div>
+
+    <div class="ghosts">
+        
+        <div class="ghost blinky">
+            <div class="eye eye1"></div>
+            <div class="eye eye2"></div>
+        </div>
+        
+        <div class="ghost pinky">
+            <div class="eye eye1"></div>
+            <div class="eye eye2"></div>
+        </div>
+        
+        <div class="ghost inky">
+            <div class="eye eye1"></div>
+            <div class="eye eye2"></div>
+        </div>
+       
+        <div class="ghost clyde">
+            <div class="eye eye1"></div>
+            <div class="eye eye2"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
